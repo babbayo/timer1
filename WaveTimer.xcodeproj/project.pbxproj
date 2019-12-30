@@ -15,6 +15,11 @@
 		04D8432123B798F700E0C797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D8431F23B798F700E0C797 /* LaunchScreen.storyboard */; };
 		04D8432C23B798F800E0C797 /* WaveTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8432B23B798F800E0C797 /* WaveTimerTests.swift */; };
 		04D8433723B798F800E0C797 /* WaveTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8433623B798F800E0C797 /* WaveTimerUITests.swift */; };
+		04D8434923B87D8200E0C797 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8434823B87D8200E0C797 /* WaveView.swift */; };
+		04D8434F23B8910200E0C797 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8434E23B8910200E0C797 /* TimerView.swift */; };
+		04D8435123B8912E00E0C797 /* TimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D8435023B8912E00E0C797 /* TimerView.xib */; };
+		04D8435323B89D5F00E0C797 /* 나눔손글씨 성실체.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04D8435223B89D5E00E0C797 /* 나눔손글씨 성실체.ttf */; };
+		04D8435423B89DAC00E0C797 /* 나눔손글씨 성실체.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 04D8435223B89D5E00E0C797 /* 나눔손글씨 성실체.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,10 @@
 		04D8433223B798F800E0C797 /* WaveTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D8433623B798F800E0C797 /* WaveTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveTimerUITests.swift; sourceTree = "<group>"; };
 		04D8433823B798F800E0C797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D8434823B87D8200E0C797 /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		04D8434E23B8910200E0C797 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		04D8435023B8912E00E0C797 /* TimerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerView.xib; sourceTree = "<group>"; };
+		04D8435223B89D5E00E0C797 /* 나눔손글씨 성실체.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "나눔손글씨 성실체.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +108,7 @@
 		04D8431323B798F400E0C797 /* WaveTimer */ = {
 			isa = PBXGroup;
 			children = (
+				04D8435223B89D5E00E0C797 /* 나눔손글씨 성실체.ttf */,
 				04D8431423B798F400E0C797 /* AppDelegate.swift */,
 				04D8431623B798F400E0C797 /* SceneDelegate.swift */,
 				04D8431823B798F400E0C797 /* ViewController.swift */,
@@ -106,6 +116,9 @@
 				04D8431D23B798F700E0C797 /* Assets.xcassets */,
 				04D8431F23B798F700E0C797 /* LaunchScreen.storyboard */,
 				04D8432223B798F700E0C797 /* Info.plist */,
+				04D8434823B87D8200E0C797 /* WaveView.swift */,
+				04D8434E23B8910200E0C797 /* TimerView.swift */,
+				04D8435023B8912E00E0C797 /* TimerView.xib */,
 			);
 			path = WaveTimer;
 			sourceTree = "<group>";
@@ -234,6 +247,8 @@
 			files = (
 				04D8432123B798F700E0C797 /* LaunchScreen.storyboard in Resources */,
 				04D8431E23B798F700E0C797 /* Assets.xcassets in Resources */,
+				04D8435323B89D5F00E0C797 /* 나눔손글씨 성실체.ttf in Resources */,
+				04D8435123B8912E00E0C797 /* TimerView.xib in Resources */,
 				04D8431C23B798F400E0C797 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D8435423B89DAC00E0C797 /* 나눔손글씨 성실체.ttf in Sources */,
+				04D8434F23B8910200E0C797 /* TimerView.swift in Sources */,
+				04D8434923B87D8200E0C797 /* WaveView.swift in Sources */,
 				04D8431923B798F400E0C797 /* ViewController.swift in Sources */,
 				04D8431523B798F400E0C797 /* AppDelegate.swift in Sources */,
 				04D8431723B798F400E0C797 /* SceneDelegate.swift in Sources */,
