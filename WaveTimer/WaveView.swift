@@ -44,28 +44,27 @@ class WaveView: UIView {
     open var secondColor: UIColor!
     open var thirdColor: UIColor!
     
-    private override init(frame: CGRect) {
+    override init(frame: CGRect) {
         self.width = frame.width
         self.height = frame.height
         self.xAxis = floor(height/2)
         self.yAxis = 0.0
         self.progress = 0.5
+        let firstColor = UIColor.init(red: 252/255, green: 158/255, blue: 50/255, alpha: 1)
+        let secondColor = UIColor.init(red: 167/255, green: 192/255, blue: 229/255, alpha: 0.5)
+        let thirdColor = UIColor.init(red: 173/255, green: 178/255, blue: 255/255, alpha: 0.5)
+        self.firstColor = firstColor
+        self.secondColor = secondColor
+        self.thirdColor = thirdColor
         super.init(frame: frame)
     }
     
     //Possible to set fillColors separately.
     public convenience init(frame: CGRect, firstColor: UIColor, secondColor: UIColor, thirdColor: UIColor) {
         self.init(frame: frame)
-        
-        let firstColor = UIColor.init(red: 252/255, green: 158/255, blue: 50/255, alpha: 1)
-        let secondColor = UIColor.init(red: 167/255, green: 192/255, blue: 229/255, alpha: 0.5)
-        let thirdColor = UIColor.init(red: 173/255, green: 178/255, blue: 255/255, alpha: 0.5)
-        
         self.firstColor = firstColor
         self.secondColor = secondColor
         self.thirdColor = thirdColor
-        
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

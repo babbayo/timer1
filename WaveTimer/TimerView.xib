@@ -33,7 +33,7 @@
                     <size key="shadowOffset" width="1" height="-1"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Ivz-PO-iu1">
-                    <rect key="frame" x="122.5" y="505" width="169" height="40"/>
+                    <rect key="frame" x="130" y="505" width="154" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owo-ot-SlN">
                             <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
@@ -46,7 +46,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hts-2z-oPr" userLabel="리셋">
-                            <rect key="frame" x="69.5" y="0.0" width="30" height="40"/>
+                            <rect key="frame" x="62" y="0.0" width="30" height="40"/>
                             <fontDescription key="fontDescription" name="NanumSeongSirCe" family="나눔손글씨 성실체" pointSize="24"/>
                             <state key="normal" title="리셋">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,7 +56,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw1-AO-atb">
-                            <rect key="frame" x="139" y="0.0" width="30" height="40"/>
+                            <rect key="frame" x="124" y="0.0" width="30" height="40"/>
                             <fontDescription key="fontDescription" name="NanumSeongSirCe" family="나눔손글씨 성실체" pointSize="24"/>
                             <state key="normal" title="편집">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,7 +70,6 @@
             </subviews>
             <constraints>
                 <constraint firstItem="Ivz-PO-iu1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pys-ol-5D6"/>
-                <constraint firstItem="Ivz-PO-iu1" firstAttribute="width" secondItem="5gp-4L-czi" secondAttribute="width" multiplier="0.647215" id="cp7-31-qUD"/>
                 <constraint firstItem="Ivz-PO-iu1" firstAttribute="top" secondItem="5gp-4L-czi" secondAttribute="bottom" constant="20" id="cwh-7i-eH3"/>
                 <constraint firstItem="5gp-4L-czi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ot1-0f-IbJ"/>
                 <constraint firstItem="5gp-4L-czi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y5G-Zj-ITi"/>
