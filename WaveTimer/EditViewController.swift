@@ -12,18 +12,25 @@ class EditViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let frame = CGRect(x: 0, y: 0,
+        width: self.view.bounds.size.width,
+        height: self.view.bounds.size.height)
+        
+        view.backgroundColor = .clear
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        blurEffectView.alpha = 0.9
+        self.view.addSubview(blurEffectView)
+        
+        let editView = EditView(frame: frame)
+        self.view.addSubview(editView)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.save(_:)), name: EditSaveButtonClickNotification, object: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func save(_ noti: Notification) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
 }

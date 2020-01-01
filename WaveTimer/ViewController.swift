@@ -74,11 +74,10 @@ extension ViewController {
     @objc func edit(_ noti: Notification) {
         reset(noti)
         print("edit")
-         let modalViewController = EditViewController()
-//        let modalViewController = self.storyboard?.instantiateViewController("EditViewController") as! EditViewController
-//        modalViewController.modalPresentationStyle = .overCurrentContext
-        modalViewController.modalPresentationStyle = .automatic
-        present(modalViewController, animated: true, completion: nil)
+        if let editViewController = self.storyboard?.instantiateViewController(withIdentifier: "EditViewController"){
+            editViewController.modalTransitionStyle = .coverVertical
+            self.present(editViewController, animated: true, completion: nil)
+        }
     }
     
     func createTimer() {

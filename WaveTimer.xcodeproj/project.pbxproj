@@ -21,6 +21,8 @@
 		04D8435323B89D5F00E0C797 /* 나눔손글씨 성실체.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04D8435223B89D5E00E0C797 /* 나눔손글씨 성실체.ttf */; };
 		04D8435423B89DAC00E0C797 /* 나눔손글씨 성실체.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 04D8435223B89D5E00E0C797 /* 나눔손글씨 성실체.ttf */; };
 		04D8435623BAF52D00E0C797 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8435523BAF52D00E0C797 /* EditViewController.swift */; };
+		04D8435823BB745100E0C797 /* EditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D8435723BB745100E0C797 /* EditView.xib */; };
+		04D8435A23BB748800E0C797 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8435923BB748800E0C797 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		04D8435023B8912E00E0C797 /* TimerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerView.xib; sourceTree = "<group>"; };
 		04D8435223B89D5E00E0C797 /* 나눔손글씨 성실체.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "나눔손글씨 성실체.ttf"; sourceTree = "<group>"; };
 		04D8435523BAF52D00E0C797 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		04D8435723BB745100E0C797 /* EditView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditView.xib; sourceTree = "<group>"; };
+		04D8435923BB748800E0C797 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				04D8434E23B8910200E0C797 /* TimerView.swift */,
 				04D8435023B8912E00E0C797 /* TimerView.xib */,
 				04D8435523BAF52D00E0C797 /* EditViewController.swift */,
+				04D8435723BB745100E0C797 /* EditView.xib */,
+				04D8435923BB748800E0C797 /* EditView.swift */,
 			);
 			path = WaveTimer;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D8435823BB745100E0C797 /* EditView.xib in Resources */,
 				04D8432123B798F700E0C797 /* LaunchScreen.storyboard in Resources */,
 				04D8431E23B798F700E0C797 /* Assets.xcassets in Resources */,
 				04D8435323B89D5F00E0C797 /* 나눔손글씨 성실체.ttf in Resources */,
@@ -279,6 +286,7 @@
 			files = (
 				04D8435423B89DAC00E0C797 /* 나눔손글씨 성실체.ttf in Sources */,
 				04D8434F23B8910200E0C797 /* TimerView.swift in Sources */,
+				04D8435A23BB748800E0C797 /* EditView.swift in Sources */,
 				04D8434923B87D8200E0C797 /* WaveView.swift in Sources */,
 				04D8431923B798F400E0C797 /* ViewController.swift in Sources */,
 				04D8431523B798F400E0C797 /* AppDelegate.swift in Sources */,
