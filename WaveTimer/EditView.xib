@@ -23,44 +23,36 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1F-zJ-dZa">
-                    <rect key="frame" x="192" y="622" width="30" height="40"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPl-TG-XA0" customClass="TimeControl" customModule="WaveTimer" customModuleProvider="target">
+                    <rect key="frame" x="50" y="244" width="740" height="740"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="740" id="Kkd-FR-aFN"/>
+                        <constraint firstAttribute="width" constant="740" id="MwR-Ma-17H"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-8l-BOC">
+                    <rect key="frame" x="165" y="524" width="99" height="58"/>
+                    <fontDescription key="fontDescription" name="NanumSeongSirCe" family="나눔손글씨 성실체" pointSize="50"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x1F-zJ-dZa">
+                    <rect key="frame" x="262" y="615" width="30" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="NanumSeongSirCe" family="나눔손글씨 성실체" pointSize="24"/>
                     <state key="normal" title="저장"/>
                     <connections>
                         <action selector="touchUpSaveButton:" destination="-1" eventType="touchUpInside" id="wLT-68-19M"/>
                     </connections>
                 </button>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A40-5U-4g6">
-                    <rect key="frame" x="47" y="340" width="320" height="216"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <connections>
-                        <action selector="changeDatePicker:" destination="-1" eventType="valueChanged" id="jfE-CN-nf0"/>
-                    </connections>
-                </datePicker>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPl-TG-XA0" customClass="TimeControl" customModule="WaveTimer" customModuleProvider="target">
-                    <rect key="frame" x="214" y="81" width="180" height="180"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="180" id="JyI-n9-qlf"/>
-                        <constraint firstAttribute="width" constant="180" id="Zh9-qI-WuG"/>
-                    </constraints>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-8l-BOC">
-                    <rect key="frame" x="186" y="311" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <constraints>
-                <constraint firstItem="hPl-TG-XA0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="37" id="AuD-je-kVd"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="x1F-zJ-dZa" secondAttribute="bottom" constant="200" id="Cfz-YU-nW2"/>
-                <constraint firstItem="A40-5U-4g6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eGw-Ui-C0t"/>
-                <constraint firstItem="x1F-zJ-dZa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eui-fz-ZJ2"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hPl-TG-XA0" secondAttribute="trailing" constant="20" id="gFA-JW-p3j"/>
-                <constraint firstItem="A40-5U-4g6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lCv-Qg-ljF"/>
+                <constraint firstItem="hPl-TG-XA0" firstAttribute="top" secondItem="x1F-zJ-dZa" secondAttribute="bottom" constant="-416" id="5cL-bS-jrj"/>
+                <constraint firstItem="hPl-TG-XA0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="NvE-Nz-twb"/>
+                <constraint firstItem="hPl-TG-XA0" firstAttribute="top" secondItem="bzh-8l-BOC" secondAttribute="bottom" constant="-338" id="gpq-P7-QIg"/>
+                <constraint firstItem="hPl-TG-XA0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="200" id="kxM-sq-n86"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bzh-8l-BOC" secondAttribute="trailing" constant="150" id="soP-Po-6eV"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>

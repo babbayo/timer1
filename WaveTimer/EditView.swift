@@ -54,6 +54,6 @@ class EditView: UIView {
     }
     
     func updateLabel() {
-        timeLabel.text = String(format: "%2d", Int(round(timeControl.value)))
+        timeLabel.text = String(format: "%2d분", Int(round(timeControl.value)))
     }
 }
