@@ -181,7 +181,8 @@ class TimeControl: UIControl {
         }
         
         let trackLayer = CAShapeLayer()
-        let pointerLayer = CAShapeLayer()
+//        let pointerLayer = CAShapeLayer()
+        let pointerLayer = CALayer()
         
         init() {
             trackLayer.fillColor = UIColor.clear.cgColor
@@ -206,7 +207,15 @@ class TimeControl: UIControl {
             pointer.move(to: CGPoint(x: bounds.width - CGFloat(pointerLength)
                 - CGFloat(lineWidth) / 2, y: bounds.midY))
             pointer.addLine(to: CGPoint(x: bounds.width, y: bounds.midY))
-            pointerLayer.path = pointer.cgPath
+            
+            
+//            pointerLayer.path = pointer.cgPath
+            pointerLayer.contents = UIImage(named: "circlePointer")
+            
+        }
+        
+        private func createRect() {
+            
         }
         
         func updateBounds(_ bounds: CGRect) {
